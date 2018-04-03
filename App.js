@@ -61,6 +61,16 @@ export default class App extends Component {
   }
 
   _animate = (xCoordinate, yCoordinate, angle) => {
+    // Didn't quite work.
+    // if (
+    //   this.state.angle._value >= 270 &&
+    //   this.state.angle._value <= 280 &&
+    //   xCoordinate > this.state.left._value
+    // ) {
+    //   xCoordinate = this._getPointOnCircle(270).x;
+    //   yCoordinate = this._getPointOnCircle(270).y;
+    //   angle = 270;
+    // }
     Animated.spring(this.state.left, {
       toValue: xCoordinate,
       restDisplacementThreshold: 1,
